@@ -1,0 +1,221 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://script/ChoiceBtn.gd" type="Script" id=1]
+[ext_resource path="res://font/Alice-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://script/dialogSys.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+outline_color = Color( 1, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="Gradient" id=9]
+offsets = PoolRealArray( 0, 0.357616, 1 )
+colors = PoolColorArray( 0.34375, 0.00805664, 0.00805664, 1, 0.118377, 0.00277447, 0.00277447, 1, 0, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=10]
+gradient = SubResource( 9 )
+
+[node name="dialogSys" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextBox" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -474.0
+margin_top = -182.782
+margin_right = 474.0
+margin_bottom = -26.7817
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChatCharName" type="RichTextLabel" parent="TextBox"]
+margin_left = 27.0
+margin_top = 11.0
+margin_right = 912.0
+margin_bottom = 53.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.956863, 0.309804, 0.0352941, 1 )
+text = "Hello"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChatText" type="RichTextLabel" parent="TextBox"]
+margin_left = 29.0
+margin_top = 57.0
+margin_right = 905.0
+margin_bottom = 141.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Hello"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NextBtn" type="Button" parent="TextBox"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -474.0
+margin_top = -154.218
+margin_right = 474.0
+margin_bottom = 4.78174
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Choice00" type="ColorRect" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -119.131
+margin_top = -256.766
+margin_right = 469.869
+margin_bottom = -202.766
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChatText" type="RichTextLabel" parent="Choice00"]
+margin_left = 24.9603
+margin_top = 6.51984
+margin_right = 565.96
+margin_bottom = 46.5198
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Hello"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChoiceBtn" type="Button" parent="Choice00"]
+margin_right = 593.0
+margin_bottom = 54.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Choice01" type="ColorRect" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -119.131
+margin_top = -320.911
+margin_right = 469.869
+margin_bottom = -266.911
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChatText" type="RichTextLabel" parent="Choice01"]
+margin_left = 24.9603
+margin_top = 6.51984
+margin_right = 565.96
+margin_bottom = 46.5198
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Hello"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChoiceBtn" type="Button" parent="Choice01"]
+margin_right = 593.0
+margin_bottom = 54.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Choice02" type="ColorRect" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -119.131
+margin_top = -385.055
+margin_right = 469.869
+margin_bottom = -331.055
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChatText" type="RichTextLabel" parent="Choice02"]
+margin_left = 24.9603
+margin_top = 6.51984
+margin_right = 565.96
+margin_bottom = 46.5198
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Hello"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChoiceBtn" type="Button" parent="Choice02"]
+margin_right = 593.0
+margin_bottom = 54.0
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BlackScreen" type="NinePatchRect" parent="."]
+visible = false
+margin_left = 1047.7
+margin_right = 2071.7
+margin_bottom = 600.0
+texture = SubResource( 10 )
+patch_margin_top = 219
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_down" from="TextBox/NextBtn" to="." method="_on_NextBtn_button_down"]
+[connection signal="button_up" from="TextBox/NextBtn" to="." method="_on_NextBtn_button_up"]
+[connection signal="button_down" from="Choice00/ChoiceBtn" to="Choice00/ChoiceBtn" method="_on_ChoiceBtn_button_down"]
+[connection signal="sendChoiceAnswered" from="Choice00/ChoiceBtn" to="." method="_on_ChoiceBtn_sendChoiceAnswered"]
+[connection signal="button_down" from="Choice01/ChoiceBtn" to="Choice01/ChoiceBtn" method="_on_ChoiceBtn_button_down"]
+[connection signal="sendChoiceAnswered" from="Choice01/ChoiceBtn" to="." method="_on_ChoiceBtn_sendChoiceAnswered"]
+[connection signal="button_down" from="Choice02/ChoiceBtn" to="Choice02/ChoiceBtn" method="_on_ChoiceBtn_button_down"]
+[connection signal="sendChoiceAnswered" from="Choice02/ChoiceBtn" to="." method="_on_ChoiceBtn_sendChoiceAnswered"]

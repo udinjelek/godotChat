@@ -1,0 +1,152 @@
+{"111": [	{	"chatNo":"000" ,
+				"chatType":"normal", 
+				"dialog": 	[	{ 	"noLine":"001", 
+									"chatCharName":"Hero", 
+									"chatCharFrame":"001", 
+									"chatText":"Hai" 
+								} ,
+								{ 	"noLine":"002", 
+									"chatCharName":"Enemy", 
+									"chatCharFrame":"001", 
+									"chatText":"Apa kabar" 
+								} ,
+								{ 	"noLine":"003", 
+									"chatCharName":"Hero", 
+									"chatCharFrame":"001", 
+									"chatText":"Kenapa" 
+								} ,
+								{ 	"noLine":"004", 
+									"chatCharName":"Enemy", 
+									"chatCharFrame":"001", 
+									"chatText":"Oh gitu" 
+								} 
+							]
+			} 
+			,
+			{ 
+				"chatNo":"001" ,
+				"chatType":"normal", 
+				"dialog": 	[	{ 	"noLine":"001", 
+									"chatCharName":"Hero", 
+									"chatCharFrame":"001", 
+									"chatText":"x Hai" 
+								} ,
+								{ 	"noLine":"002", 
+									"chatCharName":"Enemy", 
+									"chatCharFrame":"001", 
+									"chatText":"x Apa kabar" 
+								} ,
+								{ 	"noLine":"003", 
+									"chatCharName":"Hero", 
+									"chatCharFrame":"001", 
+									"chatText":"x Kenapa" 
+								} 
+							]
+			}
+			,
+			{ 
+				"chatNo":"002" ,
+				"chatType":"question", 
+				"dialog": 	[	{ 	"noLine":"001", 
+									"chatCharName":"Hero", 
+									"chatCharFrame":"001", 
+									"chatText":"x Hai" 
+								} ,
+								{ 	"noLine":"002", 
+									"chatCharName":"Enemy", 
+									"chatCharFrame":"001", 
+									"chatText":"x Apa kabar",
+									"chatJump":"0"
+								} ,
+								{ 	"noLine":"003", 
+									"chatCharName":"Hero", 
+									"chatCharFrame":"001", 
+									"chatText":"x Kenapa",
+									"chatJump":"3"
+									
+								} 
+							]
+			}
+			,
+			{	"chatNo":"003" ,
+				"chatType":"normal", 
+				"dialog": 	[	{ 	"noLine":"001", 
+									"chatCharName":"Hero", 
+									"chatCharFrame":"001", 
+									"chatText":"Hai" 
+								} ,
+								{ 	"noLine":"002", 
+									"chatCharName":"Enemy", 
+									"chatCharFrame":"001", 
+									"chatText":"Apa kabar" 
+								} ,
+								{ 	"noLine":"003", 
+									"chatCharName":"Hero", 
+									"chatCharFrame":"001", 
+									"chatText":"Kenapa" 
+								} ,
+								{ 	"noLine":"004", 
+									"chatCharName":"Enemy", 
+									"chatCharFrame":"001", 
+									"chatText":"Oh gitu" 
+								} ,
+								{ 	"noLine":"004", 
+									"chatCharName":"Enemy", 
+									"chatCharFrame":"001", 
+									"chatText":"masa iya" 
+								} ,
+								{ 	"noLine":"004", 
+									"chatCharName":"Enemy", 
+									"chatCharFrame":"001", 
+									"chatText":"luar biasa" 
+								} 
+							]
+			} 
+			,
+			{	"chatNo":"004" ,
+				"chatType":"splashScreen", 
+				"dialog": 	[	{ 	"noLine":"001", 
+									"chatCharName":"---", 
+									"chatCharFrame":"001", 
+									"chatText":"---" 
+								} 
+							]
+			} 
+			,
+			{	"chatNo":"005" ,
+				"chatType":"normal", 
+				"dialog": 	[	{ 	"noLine":"001", 
+									"chatCharName":"Hero", 
+									"chatCharFrame":"001", 
+									"chatText":"Hai" 
+								} ,
+								{ 	"noLine":"002", 
+									"chatCharName":"Enemy", 
+									"chatCharFrame":"001", 
+									"chatText":"Apa kabar" 
+								} ,
+								{ 	"noLine":"003", 
+									"chatCharName":"Hero", 
+									"chatCharFrame":"001", 
+									"chatText":"Kenapa" 
+								} ,
+								{ 	"noLine":"004", 
+									"chatCharName":"Enemy", 
+									"chatCharFrame":"001", 
+									"chatText":"Oh gitu" 
+								} ,
+								{ 	"noLine":"004", 
+									"chatCharName":"Enemy", 
+									"chatCharFrame":"001", 
+									"chatText":"masa iya" 
+								} ,
+								{ 	"noLine":"004", 
+									"chatCharName":"Enemy", 
+									"chatCharFrame":"001", 
+									"chatText":"luar biasa" 
+								} 
+							]
+			} 
+		]
+}
+	
