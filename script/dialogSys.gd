@@ -41,11 +41,11 @@ func _process(_delta):
 			nextProcess()
 	if splashScreenMode != 0 :
 		print($BlackScreen.rect_position.x)
-		$BlackScreen.rect_position.x -= 20
-		if $BlackScreen.rect_position.x <= 0 and splashScreenMode == 1:
+		$BlackScreen.rect_position.x -= 35
+		if $BlackScreen.rect_position.x <= -500 and splashScreenMode == 1:
 			splashScreenMode = 2
 			nextProcess()
-		elif $BlackScreen.rect_position.x < -1100:
+		elif $BlackScreen.rect_position.x < -2200:
 			splashScreenMode = 0
 			$BlackScreen.visible = false
 		
@@ -103,7 +103,7 @@ func generateChatOutput():
 	elif chatType == "splashScreen":
 		splashScreenMode = 1
 		$BlackScreen.visible = true
-		$BlackScreen.rect_position.x = 1100
+		$BlackScreen.rect_position.x = 1200
 		
 func generateChoiceOutput():
 	for arrChoice in range(1,maxChatLine + 1):

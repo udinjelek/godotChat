@@ -1,13 +1,16 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://script/ChoiceBtn.gd" type="Script" id=1]
 [ext_resource path="res://font/Alice-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://script/dialogSys.gd" type="Script" id=3]
+[ext_resource path="res://picture/blackScreen.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
 outline_color = Color( 1, 0, 0, 1 )
 font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxEmpty" id=2]
 
 [sub_resource type="StyleBoxEmpty" id=3]
 
@@ -18,15 +21,6 @@ font_data = ExtResource( 2 )
 [sub_resource type="StyleBoxEmpty" id=6]
 
 [sub_resource type="StyleBoxEmpty" id=7]
-
-[sub_resource type="StyleBoxEmpty" id=8]
-
-[sub_resource type="Gradient" id=9]
-offsets = PoolRealArray( 0, 0.357616, 1 )
-colors = PoolColorArray( 0.34375, 0.00805664, 0.00805664, 1, 0.118377, 0.00277447, 0.00277447, 1, 0, 0, 0, 1 )
-
-[sub_resource type="GradientTexture" id=10]
-gradient = SubResource( 9 )
 
 [node name="dialogSys" type="Control"]
 anchor_right = 1.0
@@ -82,9 +76,9 @@ margin_left = -474.0
 margin_top = -154.218
 margin_right = 474.0
 margin_bottom = 4.78174
-custom_styles/hover = SubResource( 3 )
-custom_styles/pressed = SubResource( 4 )
-custom_styles/normal = SubResource( 5 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -118,9 +112,9 @@ __meta__ = {
 [node name="ChoiceBtn" type="Button" parent="Choice00"]
 margin_right = 593.0
 margin_bottom = 54.0
-custom_styles/hover = SubResource( 6 )
-custom_styles/pressed = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -155,9 +149,9 @@ __meta__ = {
 [node name="ChoiceBtn" type="Button" parent="Choice01"]
 margin_right = 593.0
 margin_bottom = 54.0
-custom_styles/hover = SubResource( 6 )
-custom_styles/pressed = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -192,21 +186,20 @@ __meta__ = {
 [node name="ChoiceBtn" type="Button" parent="Choice02"]
 margin_right = 593.0
 margin_bottom = 54.0
-custom_styles/hover = SubResource( 6 )
-custom_styles/pressed = SubResource( 7 )
-custom_styles/normal = SubResource( 8 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="BlackScreen" type="NinePatchRect" parent="."]
-visible = false
-margin_left = 1047.7
-margin_right = 2071.7
+margin_left = 1200.0
+margin_right = 3200.0
 margin_bottom = 600.0
-texture = SubResource( 10 )
-patch_margin_top = 219
+texture = ExtResource( 4 )
+region_rect = Rect2( -0.940659, -0.816216, 1491.9, 435.614 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
