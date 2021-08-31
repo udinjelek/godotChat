@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-08-31T13:40:03.959Z" agent="5.0 (Windows)" etag="PC3AC20LvNlaO-DBFvVd" version="15.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-31T13:42:46.957Z" agent="5.0 (Windows)" etag="mLB8e89uC7GpsH-3i0rm" version="15.0.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1973" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="CT8sEvGk3rI5cgj4gR0R-0" value="Main" style="swimlane;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="40" y="10" width="200" height="220" as="geometry" />
+          <mxGeometry x="70" y="10" width="200" height="220" as="geometry" />
         </mxCell>
         <mxCell id="CT8sEvGk3rI5cgj4gR0R-1" value="Klik ready And Player Klik" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="CT8sEvGk3rI5cgj4gR0R-0">
           <mxGeometry x="10" y="40" width="180" height="60" as="geometry" />
@@ -140,7 +140,7 @@
         <mxCell id="CT8sEvGk3rI5cgj4gR0R-46" value="- Hide All Answer Box&lt;br&gt;(karena udah di klik sama player juga)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="CT8sEvGk3rI5cgj4gR0R-42">
           <mxGeometry x="20" y="45" width="190" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="CT8sEvGk3rI5cgj4gR0R-48" value="&lt;div&gt;EXE: NextProcess&lt;br&gt;&lt;br&gt;(untuk nge trigger Update Jump Point,&lt;br&gt;ReUse Func biar manaje simple)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="CT8sEvGk3rI5cgj4gR0R-42">
+        <mxCell id="CT8sEvGk3rI5cgj4gR0R-48" value="&lt;div&gt;EXE: NextProcess&lt;br&gt;&lt;br&gt;(untuk nge trigger Update Jump Point &amp;amp; Process Jump Point,&lt;br&gt;ReUse Func biar manaje simple)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="CT8sEvGk3rI5cgj4gR0R-42">
           <mxGeometry x="20" y="230" width="190" height="90" as="geometry" />
         </mxCell>
         <mxCell id="CT8sEvGk3rI5cgj4gR0R-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="CT8sEvGk3rI5cgj4gR0R-41" target="CT8sEvGk3rI5cgj4gR0R-42">
@@ -173,6 +173,9 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-30" y="340" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="CT8sEvGk3rI5cgj4gR0R-61" value="Process Jump Point" style="swimlane;startSize=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#3333FF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="580" y="65" width="330" height="435" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
