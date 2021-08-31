@@ -83,7 +83,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Choice00" type="ColorRect" parent="."]
+[node name="Choice01" type="ColorRect" parent="."]
 visible = false
 anchor_left = 0.5
 anchor_top = 1.0
@@ -93,43 +93,6 @@ margin_left = -119.131
 margin_top = -256.766
 margin_right = 469.869
 margin_bottom = -202.766
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ChatText" type="RichTextLabel" parent="Choice00"]
-margin_left = 24.9603
-margin_top = 6.51984
-margin_right = 565.96
-margin_bottom = 46.5198
-custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "Hello"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ChoiceBtn" type="Button" parent="Choice00"]
-margin_right = 593.0
-margin_bottom = 54.0
-custom_styles/hover = SubResource( 5 )
-custom_styles/pressed = SubResource( 6 )
-custom_styles/normal = SubResource( 7 )
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Choice01" type="ColorRect" parent="."]
-visible = false
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -119.131
-margin_top = -320.911
-margin_right = 469.869
-margin_bottom = -266.911
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -164,9 +127,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = -119.131
-margin_top = -385.055
+margin_top = -320.911
 margin_right = 469.869
-margin_bottom = -331.055
+margin_bottom = -266.911
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -194,6 +157,43 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Choice03" type="ColorRect" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -119.131
+margin_top = -385.055
+margin_right = 469.869
+margin_bottom = -331.055
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChatText" type="RichTextLabel" parent="Choice03"]
+margin_left = 24.9603
+margin_top = 6.51984
+margin_right = 565.96
+margin_bottom = 46.5198
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Hello"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChoiceBtn" type="Button" parent="Choice03"]
+margin_right = 593.0
+margin_bottom = 54.0
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="BlackScreen" type="NinePatchRect" parent="."]
 margin_left = 1200.0
 margin_right = 3200.0
@@ -206,9 +206,9 @@ __meta__ = {
 
 [connection signal="button_down" from="TextBox/NextBtn" to="." method="_on_NextBtn_button_down"]
 [connection signal="button_up" from="TextBox/NextBtn" to="." method="_on_NextBtn_button_up"]
-[connection signal="button_down" from="Choice00/ChoiceBtn" to="Choice00/ChoiceBtn" method="_on_ChoiceBtn_button_down"]
-[connection signal="sendChoiceAnswered" from="Choice00/ChoiceBtn" to="." method="_on_ChoiceBtn_sendChoiceAnswered"]
 [connection signal="button_down" from="Choice01/ChoiceBtn" to="Choice01/ChoiceBtn" method="_on_ChoiceBtn_button_down"]
 [connection signal="sendChoiceAnswered" from="Choice01/ChoiceBtn" to="." method="_on_ChoiceBtn_sendChoiceAnswered"]
 [connection signal="button_down" from="Choice02/ChoiceBtn" to="Choice02/ChoiceBtn" method="_on_ChoiceBtn_button_down"]
 [connection signal="sendChoiceAnswered" from="Choice02/ChoiceBtn" to="." method="_on_ChoiceBtn_sendChoiceAnswered"]
+[connection signal="button_down" from="Choice03/ChoiceBtn" to="Choice03/ChoiceBtn" method="_on_ChoiceBtn_button_down"]
+[connection signal="sendChoiceAnswered" from="Choice03/ChoiceBtn" to="." method="_on_ChoiceBtn_sendChoiceAnswered"]
