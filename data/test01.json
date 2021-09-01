@@ -1,109 +1,161 @@
 {"111": [	{	"chatNo":"000" ,
 				"chatType":"normal", 
 				"dialog": 	[	{ 	"noLine":"001", 
-									"chatCharName":"Hero", 
+									"chatCharName":"Gugu", 
 									"chatCharFrame":"001", 
-									"chatText":"Hai" 
-								} ,
-								{ 	"noLine":"002", 
-									"chatCharName":"Enemy", 
-									"chatCharFrame":"001", 
-									"chatText":"Apa kabar" 
+									"chatText":"You know, I'm all alone. If I had grown up in a normal household..." 
 								} ,
 								{ 	"noLine":"003", 
-									"chatCharName":"Hero", 
+									"chatCharName":"Gugu", 
 									"chatCharFrame":"001", 
-									"chatText":"Kenapa" 
+									"chatText":"There would be someone who would prepare food for me every day. I would have a bed to sleep in every night." 
+								} ,
+								{ 	"noLine":"002", 
+									"chatCharName":"Gugu", 
+									"chatCharFrame":"001", 
+									"chatText":"A mother to nurse me when I get sick. A father asking me how I was doing every day." 
+								} ,
+								{ 	"noLine":"002", 
+									"chatCharName":"Gugu", 
+									"chatCharFrame":"001", 
+									"chatText":"Older twin sisters who would tease but play with me. A big brother who would teach me lots of things." 
+								} ,
+								{ 	"noLine":"003", 
+									"chatCharName":"Gugu", 
+									"chatCharFrame":"001", 
+									"chatText":"To live a life where people would remember me. It'd be a matter of course. But... But then..." 
 								} ,
 								{ 	"noLine":"004", 
-									"chatCharName":"Enemy", 
+									"chatCharName":"Gugu", 
 									"chatCharFrame":"001", 
-									"chatText":"Oh gitu" 
+									"chatText":"One day, I would feel that discomfort." 
 								} 
 							]
-			} 
+			}
+			,
+			{	"chatNo":"001" ,
+				"chatType":"splashScreen", 
+				"dialog": 	[	{ 	"noLine":"001", 
+									"chatCharName":"---", 
+									"chatCharFrame":"001", 
+									"chatText":"---" 
+								} 
+							]
+			} 			
 			,
 			{ 
-				"chatNo":"001" ,
+				"chatNo":"002" ,
 				"chatType":"normal", 
 				"dialog": 	[	{ 	"noLine":"001", 
-									"chatCharName":"Hero", 
+									"chatCharName":"Mom", 
 									"chatCharFrame":"001", 
-									"chatText":"x Hai" 
+									"chatText":"Come, children! We received some cake. Let's eat it together." 
 								} ,
 								{ 	"noLine":"002", 
-									"chatCharName":"Enemy", 
+									"chatCharName":"Twin Sister", 
 									"chatCharFrame":"001", 
-									"chatText":"x Apa kabar" 
+									"chatText":"Yay! You didn't forget our promise! Cherry cake, right? My favorite!" 
 								} ,
 								{ 	"noLine":"003", 
-									"chatCharName":"Hero", 
+									"chatCharName":"Brother", 
 									"chatCharFrame":"001", 
-									"chatText":"x Kenapa" 
+									"chatText":"Wait, Gugu. Wait. Such are the rules." 
 								} 
 							]
 			}
 			,
 			{ 
-				"chatNo":"002" ,
+				"chatNo":"003" ,
 				"chatType":"question", 
 				"dialog": 	[	{ 	"noLine":"001", 
-									"chatCharName":"Hero", 
+									"chatCharName":"Mom", 
 									"chatCharFrame":"001", 
-									"chatText":"x Hai" 
+									"chatText":"Hm? Why are both of you waiting over there? Come quickly and have some cake with us!" 
 								} ,
 								{ 	"noLine":"002", 
-									"chatCharName":"Enemy", 
+									"chatCharName":"---", 
 									"chatCharFrame":"001", 
-									"chatText":"x Apa kabar",
-									"chatJump":"0"
+									"chatText":"Yes. Thank you very much!",
+									"chatJump":"4"
 								} ,
 								{ 	"noLine":"003", 
-									"chatCharName":"Hero", 
+									"chatCharName":"---", 
 									"chatCharFrame":"001", 
-									"chatText":"x Kenapa",
-									"chatJump":"3"
+									"chatText":"[reply prev dialog]",
+									"chatJump":"0"
+									
+								} ,
+								{ 	"noLine":"004", 
+									"chatCharName":"---", 
+									"chatCharFrame":"001", 
+									"chatText":"[exit dialog]",
+									"chatJump":"-1"
 									
 								} 
 							]
 			}
 			,
-			{	"chatNo":"003" ,
+			{	"chatNo":"004" ,
 				"chatType":"normal", 
 				"dialog": 	[	{ 	"noLine":"001", 
-									"chatCharName":"Hero", 
+									"chatCharName":"Gugu", 
 									"chatCharFrame":"001", 
-									"chatText":"Hai" 
+									"chatText":"After a while, we had to move far away due to my father's work. But they didn't take us with them." 
 								} ,
 								{ 	"noLine":"002", 
-									"chatCharName":"Enemy", 
+									"chatCharName":"Brother", 
 									"chatCharFrame":"001", 
-									"chatText":"Apa kabar" 
+									"chatText":"Well, I guess it's just the two of us now. All right. Let's go find work elsewhere." 
 								} ,
 								{ 	"noLine":"003", 
-									"chatCharName":"Hero", 
+									"chatCharName":"Gugu", 
 									"chatCharFrame":"001", 
-									"chatText":"Kenapa" 
+									"chatText":"I thought they were my family, but they were just my employers." 
 								} ,
 								{ 	"noLine":"004", 
-									"chatCharName":"Enemy", 
+									"chatCharName":"Gugu", 
 									"chatCharFrame":"001", 
-									"chatText":"Oh gitu" 
+									"chatText":"The only one who actually thought of me was my brother. Ever since we became alone, he has always been kind to me." 
 								} ,
 								{ 	"noLine":"004", 
-									"chatCharName":"Enemy", 
+									"chatCharName":"Gugu", 
 									"chatCharFrame":"001", 
-									"chatText":"masa iya" 
+									"chatText":"But now, even that is in the past. In the end, I'm alone." 
 								} ,
 								{ 	"noLine":"004", 
-									"chatCharName":"Enemy", 
+									"chatCharName":"Gugu", 
 									"chatCharFrame":"001", 
-									"chatText":"luar biasa" 
+									"chatText":"But now you're here. I'm sorry for what I did, Fushi... I'm sorry for hurting you." 
+								} ,
+								{ 	"noLine":"004", 
+									"chatCharName":"Gugu", 
+									"chatCharFrame":"001", 
+									"chatText":"If I die, become me, Fushi. I'm a bit sleepy now..." 
+								} ,
+								{ 	"noLine":"004", 
+									"chatCharName":"Fushi", 
+									"chatCharFrame":"001", 
+									"chatText":"Did you eat too much?" 
+								} ,
+								{ 	"noLine":"004", 
+									"chatCharName":"Gugu", 
+									"chatCharFrame":"001", 
+									"chatText":"Right now, I'm really happy. After all, you're worrying about me. You thought of me, and now you're here for me." 
+								} ,
+								{ 	"noLine":"004", 
+									"chatCharName":"Gugu", 
+									"chatCharFrame":"001", 
+									"chatText":"I feel like... that's what family should be." 
+								} ,
+								{ 	"noLine":"004", 
+									"chatCharName":"Fushi", 
+									"chatCharFrame":"001", 
+									"chatText":"Gugu..." 
 								} 
 							]
 			} 
 			,
-			{	"chatNo":"004" ,
+			{	"chatNo":"005" ,
 				"chatType":"splashScreen", 
 				"dialog": 	[	{ 	"noLine":"001", 
 									"chatCharName":"---", 
@@ -113,37 +165,37 @@
 							]
 			} 
 			,
-			{	"chatNo":"005" ,
+			{	"chatNo":"006" ,
 				"chatType":"normal", 
 				"dialog": 	[	{ 	"noLine":"001", 
-									"chatCharName":"Hero", 
+									"chatCharName":"Rynn", 
 									"chatCharFrame":"001", 
-									"chatText":"Hai" 
+									"chatText":"Found you! What are you doing here?" 
 								} ,
 								{ 	"noLine":"002", 
-									"chatCharName":"Enemy", 
+									"chatCharName":"Gugu", 
 									"chatCharFrame":"001", 
-									"chatText":"Apa kabar" 
+									"chatText":"Rynn?" 
 								} ,
 								{ 	"noLine":"003", 
-									"chatCharName":"Hero", 
+									"chatCharName":"Rynn", 
 									"chatCharFrame":"001", 
-									"chatText":"Kenapa" 
+									"chatText":"I spent so much time looking for you!" 
 								} ,
 								{ 	"noLine":"004", 
-									"chatCharName":"Enemy", 
+									"chatCharName":"Gugu", 
 									"chatCharFrame":"001", 
-									"chatText":"Oh gitu" 
+									"chatText":"How did you find us?" 
 								} ,
 								{ 	"noLine":"004", 
-									"chatCharName":"Enemy", 
+									"chatCharName":"Rynn", 
 									"chatCharFrame":"001", 
-									"chatText":"masa iya" 
+									"chatText":"I heard Myrr. Myrr likes to run away too much. Why won't you come back?" 
 								} ,
 								{ 	"noLine":"004", 
-									"chatCharName":"Enemy", 
+									"chatCharName":"Gugu", 
 									"chatCharFrame":"001", 
-									"chatText":"luar biasa" 
+									"chatText":"What are you saying, 'why won't I come back'? I am a victim here!" 
 								} 
 							]
 			} 

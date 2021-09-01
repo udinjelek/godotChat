@@ -39,9 +39,12 @@ func _process(_delta):
 		 and splashScreenMode == 0:
 			mouseClickBtn = false
 			nextProcess()
+	
+	
+	
 	if splashScreenMode != 0 :
 #		print($BlackScreen.rect_position.x)
-		$BlackScreen.rect_position.x -= 35
+		$BlackScreen.rect_position.x -= 50
 		if $BlackScreen.rect_position.x <= -500 and splashScreenMode == 1:
 			splashScreenMode = 2
 			nextProcess()
@@ -125,7 +128,7 @@ func _on_NextBtn_button_up():
 	mouseClickBtn = false
 
 func _on_ChoiceBtn_sendChoiceAnswered(obj):
-	
+	chatType = "Normal"
 	hideAllChoice()
 	var choiceAnswered:int = int(obj[-1])
 #	send value array choiceChatJump, based on button click,  int(obj[-1]) -> right 1 of choiceBtn Name Clicked-> noChoiceClicked
