@@ -43,7 +43,12 @@ func _physics_process(_delta):
 	
 	if len($TextBox/ChatText.text) < len(chatText):
 		$TextBox/ChatText.text = chatText.left(len($TextBox/ChatText.text) + 1)
-	
+		
+	if len($TextBox/ChatText.text) == len(chatText) \
+	   and get_node("Choice01").visible == false \
+	   and chatType == "question":
+		showChoiceOutput()
+		
 	if splashScreenMode != 0 :
 #		print($BlackScreen.rect_position.x)
 		$BlackScreen.rect_position.x -= blackScrrenSpeed
@@ -112,7 +117,7 @@ func generateChatOutput():
 #		print(chatGlobalCode,chatNo,chatLine)
 		$TextBox/ChatCharName.text	= LoaderText.getChatCharName(chatGlobalCode,chatNo,chatLine)
 		chatText = LoaderText.getChatText(chatGlobalCode,chatNo,chatLine)
-		$TextBox/ChatText.text	= LoaderText.getChatText(chatGlobalCode,chatNo,chatLine)
+		$TextBox/ChatText.text	= ""
 		generateChoiceOutput()
 	elif chatType == "splashScreen":
 		splashScreenMode = 1
@@ -121,10 +126,14 @@ func generateChatOutput():
 		
 func generateChoiceOutput():
 	for arrChoice in range(1,maxChatLine + 1):
-		get_node("Choice0" + str(arrChoice)).visible = true
+#		get_node("Choice0" + str(arrChoice)).visible = true
 		get_node("Choice0" + str(arrChoice) + "/ChatText").text =  LoaderText.getChatText(chatGlobalCode,chatNo,arrChoice)
 		choiceChatJump[arrChoice] =  int(LoaderText.getChatJump(chatGlobalCode,chatNo,arrChoice))
 
+func showChoiceOutput():
+	for arrChoice in range(1,maxChatLine + 1):
+		get_node("Choice0" + str(arrChoice)).visible = true
+		
 func _on_NextBtn_button_down():
 	mouseClickBtn = true
 
