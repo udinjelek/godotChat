@@ -195,11 +195,11 @@ __meta__ = {
 }
 
 [node name="BlackScreen" type="NinePatchRect" parent="."]
-margin_left = 1200.0
-margin_right = 3200.0
+margin_left = 1211.31
+margin_right = 3211.31
 margin_bottom = 600.0
 texture = ExtResource( 4 )
-region_rect = Rect2( -0.940659, -0.816216, 1491.9, 435.614 )
+region_rect = Rect2( -0.940659, -0.816216, 1879.72, 641.491 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

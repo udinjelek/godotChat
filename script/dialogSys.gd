@@ -20,9 +20,10 @@ var	chatCharFrame
 var	chatPost
 var	chatJump
 var	chatReturnValue
-var	chatText
+var	chatText:String
 
 var choiceChatJump = [null,-1,-1,-1]
+var blackScrrenSpeed = 30
 
 var valid_nextLinePoint
 var splashScreenMode = 0 
@@ -32,7 +33,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
+func _physics_process(_delta):
 	if ( Input.is_action_just_pressed("chatTextBoxNext") or mouseClickBtn == true ) \
 		 and self.visible == true \
 		 and chatType == "normal" \
@@ -40,11 +41,12 @@ func _process(_delta):
 			mouseClickBtn = false
 			nextProcess()
 	
-	
+	if len($TextBox/ChatText.text) < len(chatText):
+		$TextBox/ChatText.text = chatText.left(len($TextBox/ChatText.text) + 1)
 	
 	if splashScreenMode != 0 :
 #		print($BlackScreen.rect_position.x)
-		$BlackScreen.rect_position.x -= 50
+		$BlackScreen.rect_position.x -= blackScrrenSpeed
 		if $BlackScreen.rect_position.x <= -500 and splashScreenMode == 1:
 			splashScreenMode = 2
 			nextProcess()
@@ -103,11 +105,13 @@ func quitProcess():
 func generateChatOutput():
 	if chatType == "normal":
 		$TextBox/ChatCharName.text	= LoaderText.getChatCharName(chatGlobalCode,chatNo,chatLine)
-		$TextBox/ChatText.text	= LoaderText.getChatText(chatGlobalCode,chatNo,chatLine)
+		chatText = LoaderText.getChatText(chatGlobalCode,chatNo,chatLine)
+		$TextBox/ChatText.text	= ""
 		print(LoaderText.checkKeyChatLineExist("chatJump",chatGlobalCode,chatNo,chatLine))
 	elif chatType == "question":
 #		print(chatGlobalCode,chatNo,chatLine)
 		$TextBox/ChatCharName.text	= LoaderText.getChatCharName(chatGlobalCode,chatNo,chatLine)
+		chatText = LoaderText.getChatText(chatGlobalCode,chatNo,chatLine)
 		$TextBox/ChatText.text	= LoaderText.getChatText(chatGlobalCode,chatNo,chatLine)
 		generateChoiceOutput()
 	elif chatType == "splashScreen":
