@@ -41,7 +41,7 @@ func _physics_process(_delta):
 			mouseClickBtn = false
 			nextProcess()
 	
-	if len($TextBox/ChatText.text) < len(chatText):
+	if len($TextBox/ChatText.text) < len(chatText) and splashScreenMode == 0:
 		$TextBox/ChatText.text = chatText.left(len($TextBox/ChatText.text) + 1)
 		
 	if len($TextBox/ChatText.text) == len(chatText) \
